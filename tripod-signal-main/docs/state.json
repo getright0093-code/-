@@ -1,0 +1,42 @@
+{
+ "asof": "20261117",
+ "state": "UP_RISKOFF",
+ "state_label": "상승 · 위험회피",
+ "alloc": {
+  "QQQ": 0.5,
+  "QLD": 0.5
+ },
+ "alloc_text": "QLD 50% + QQQ 50%",
+ "gear": 1.5,
+ "ndx": 27146.3,
+ "sma": 27525.97,
+ "gap_pct": -1.38,
+ "vix_ma": 21.12,
+ "high52": 31224.7,
+ "dd_pct": -13.06,
+ "changed_today": false,
+ "prev_state": "UP_RISKOFF",
+ "prev_alloc_text": "QLD 50% + QQQ 50%",
+ "days_since_change": 12,
+ "generated_at": "2026-11-24T04:19:58Z",
+ "last_change": {
+  "signal_date": "20261105",
+  "fill_date": "20261106",
+  "from": "UP_RISKON",
+  "to": "UP_RISKOFF",
+  "from_alloc": "TQQQ 100%",
+  "to_alloc": "QLD 50% + QQQ 50%",
+  "from_gear": 3.0,
+  "to_gear": 1.5
+ },
+ "params": {
+  "sma_window": 250,
+  "band_up": 0.01,
+  "band_down": -0.05,
+  "vix_window": 10,
+  "vix_up_threshold": 28.0,
+  "vix_down_threshold": 18.0,
+  "dd_window": 252,
+  "dd_threshold": -0.09
+ }
+}

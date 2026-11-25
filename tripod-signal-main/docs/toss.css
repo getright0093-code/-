@@ -1,0 +1,52 @@
+:root {
+  --ink:#191f28;
+  --ink-2:#505967;
+  --ink-3:#8b95a1;
+  --ground:#f5f7fa;
+  --panel:#ffffff;
+  --panel-2:#f1f4f8;
+  --line:#edf0f4;
+  --line-strong:#dce2e9;
+  --accent:#3182f6;
+  --accent-soft:#e8f2ff;
+  --ok:#16a36a;
+  --ok-soft:#e6f7ef;
+  --warn:#d58a21;
+  --warn-soft:#fff4df;
+  --crit:#e05252;
+  --crit-soft:#fff0f0;
+  --shadow:0 2px 12px rgba(20,40,70,.04);
+}
+body {background:var(--ground);color:var(--ink)}
+.wrap {max-width:1120px;padding:35px 24px 70px;gap:24px}
+h1 {font-size:28px;letter-spacing:-.8px}
+.verdict,.leg,.card {
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+.verdict {border-left:5px solid var(--st);padding:30px}
+.verdict .alloc {font-size:32px;letter-spacing:-1px}
+.legs {gap:16px}
+.leg {padding:24px 22px}
+.leg .role {color:var(--accent)}
+.leg .val {font-size:32px}
+.card > .hd {padding:22px 24px}
+th {padding:14px 20px;background:var(--panel)}
+td {padding:16px 20px}
+.pill {border-radius:20px;padding:4px 9px}
+.changed,.steady {border-radius:20px;padding:5px 10px}
+.caution {border-radius:12px;padding:17px 20px}
+.stale {border-radius:12px}
+.chartwrap {padding:15px}
+.legend {padding:14px 22px}
+@media(max-width:600px) {
+  .wrap {padding:24px 15px 50px}
+  h1 {font-size:24px}
+  .verdict {padding:22px 18px}
+  .verdict .alloc {font-size:25px}
+  .leg {padding:20px}
+  .card > .hd {padding:17px}
+  td,th {padding:12px}
+}
